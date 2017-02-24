@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+	<title>自定义checkbox， radio样式</title>
+</head>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+	}
+	div{
+		width: 100px;text-align: height:50px;
+		margin: 0 20px;
+		background-color: red;
+		background: url(img/icon.png) -1.6em bottom no-repeat;
+	}
+	input {
+		background: red;
+	}
+    input[type="radio"]:checked{
+        background: url(img/icon.png) -1em bottom no-repeat;
+    }
+    input[type="checkbox"]:checked {
+    	
+    }
+    input[type="radio"]::before{
+    	color: #ccc;
+    }
+    input[type="radio"]::after{
+
+    }
+</style>
+<body>
+  <div>
+      <label><input type="radio" name="radio"></label>
+      </br>
+  	  <label><input type="checkbox" name="checkbox"></label>
+  </div>
+   <div>
+      <label for="radio"></label><input type="radio" name="radio" id="radio">
+       </br>
+  	  <label for="checkbox"></label><input type="checkbox" name="checkbox" id="checkbox">
+  </div>
+  
+</body>
+</html>
